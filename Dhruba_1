@@ -1,0 +1,204 @@
+#For_loop
+<?php
+for($i=0;$i<10;$i++)
+{
+    echo "I love Web Development.","<br>";
+}
+for($i=0;$i<=10;$i+=2)
+{
+    echo "I love PHP.","<br>";
+}
+
+?>
+
+
+
+
+
+#If_else loop
+
+<?php
+/*$number=50;
+
+if($number==45)
+{
+    echo "This is Sajib's number.";
+}
+else {
+    echo "Wrong number";
+}
+*/
+
+$day="fri";
+
+if($day=='sat')
+{
+    echo "This is Saturday.";
+}
+elseif($day=='sun')
+{
+    echo "This is Sunday.";
+}
+elseif($day=='mon')
+{
+    echo "This is Monnday.";
+}
+elseif($day=='tue')
+{
+    echo "This is Tuesday.";
+}
+elseif($day=='wed')
+{
+    echo "This is Wednesday.";
+}
+elseif($day=='thu')
+{
+    echo "This is Thursday.";
+}
+elseif($day=='fri')
+{
+    echo "This is Friday.";
+}
+else
+{
+    echo "Wrong input.";
+}
+
+
+?>
+
+
+
+
+
+#Switch-case loop
+
+<?php
+
+$day = 'mon';
+switch($day){
+    case 'sat':
+        echo "This is Saturday.<br>";
+        break;
+    case 'sun':
+        echo "This is Sunday.<br>";
+        break;
+    case 'mon':
+        echo "This is Monday.<br>";
+        break;
+    case 'tue':
+        echo "This is Tuesday.<br>";
+        break;
+    case 'wed':
+        echo "This is Wednesday.<br>";
+        break;
+    case 'thu':
+        echo "This is Thursday.<br>";
+        break;
+    case 'fri':
+        echo "This is Friday.<br>";
+        break;
+    default :
+        echo " Wrong Input.<br>";
+        break;
+}
+
+
+?>
+
+
+
+
+
+#While Loop
+
+<?php
+$number = 0;
+while($number<=10)
+{
+    echo "My name is Dhruba."."<br>";
+    $number++;
+}
+
+
+
+?>
+
+
+
+
+
+#Do-while loop
+
+<?php
+
+$number= 0;
+do{
+    echo "This is number ".$number."<br>";
+    $number++;
+}
+while($number<=10);
+
+
+?>
+
+
+
+
+
+# Array
+
+<?php
+
+$studentlist = array('Asma','Sokina','Jorina','Kuddus','Rahim');
+# $totalstd = count($studentlist);   #for counting the number of element. 
+
+for($i=0; $i< count($studentlist);$i++)
+{
+    echo $studentlist[$i]."<br>";
+}
+
+$stulist = array('Name','Sokina','Jorina','Kuddus','Rahim');
+
+foreach($stulist as $stlist)  #indexed array
+{
+    echo $stlist."<br>";
+}
+
+$stdulist =array('Adam'=>'20000 USD','Rahim'=>'25000 USD');
+
+foreach($stdulist as $key => $value)  #assoiciative array
+{
+    echo $value."<br>";
+}
+
+
+
+?>
+
+
+
+
+# Multi dimensional array
+
+
+<?php
+
+$studentlist = array(
+    array('name'=>'Omar','email'=> 'omar@gmail.com','is_single'=>true,),
+    array('name'=>'Hasem','email'=> 'hasem@gmail.com','is_single'=>false,),
+    array('name'=>'Rahim','email'=> 'rahim@gmail.com','is_single'=>true,),
+    array('name'=>'Salam','email'=> 'salam@gmail.com','is_single'=>false,),
+
+);
+for($i=0;$i<count($studentlist);$i++)
+    {
+        foreach($studentlist[$i] as $key=>$value )
+        {
+            echo $key." ".$value."<br>";
+            
+        }
+}
+
+
+?>
